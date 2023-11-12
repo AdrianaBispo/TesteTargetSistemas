@@ -16,7 +16,6 @@ class Login extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               SizedBox(
-                //color: Colors.blue.shade50,
                 width: MediaQuery.of(context).size.width * .8,
                 height: MediaQuery.of(context).size.height * .7,
                 child: Column(

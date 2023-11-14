@@ -40,7 +40,7 @@ class _BotaoLoginState extends State<BotaoLogin> {
       onPressed: () {
         controller.validarTudo();
         if(controller.error.temErros == true){
-          Navigator.pushNamed(context, '/');
+          Navigator.pushReplacementNamed(context, '/captura');
         }
       },
       child: Text(

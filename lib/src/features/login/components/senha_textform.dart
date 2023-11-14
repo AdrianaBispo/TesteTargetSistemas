@@ -44,6 +44,9 @@ class _SenhaTextFormState extends State<SenhaTextForm> {
           ),
           SizedBox(height: 10),
           TextFormField(
+            obscureText: true,
+            enableSuggestions: false,
+            autocorrect: false,
             cursorColor: AppColor.instance.primary,
             decoration: InputDecoration(
               prefixIcon: Icon(

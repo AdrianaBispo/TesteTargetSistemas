@@ -16,5 +16,5 @@ class AppColor {
   Color get gradien1 => Color(0xFF1C5566);
   Color get gradien2 => Color(0xFF26757A);
   Color get gradien3 => Color(0xFF29918A);
-  
+  Color get vermelho =>  Colors.red;
 }

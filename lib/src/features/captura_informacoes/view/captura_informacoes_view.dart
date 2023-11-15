@@ -2,16 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:provider/provider.dart';
 //repository
-import '../../components/botao_privacidade.dart';
-import '../components/lista_informacoes.dart';
 import '../repository/captura_repository.dart';
-//controller
+//utils
+import '../../../shared/utils/app_color.dart';
 import '../../../shared/utils/app_theme.dart';
-import '../components/formulario_informacoes.dart';
+//controller
 import '../controller/captura_controller.dart';
 //components
-import '../../../shared/utils/app_color.dart';
+import '../../components/botao_privacidade.dart';
 import '../../components/custom_background.dart';
+import '../components/lista_informacoes.dart';
+import '../components/formulario_informacoes.dart';
 
 class CapturaInformacoes extends StatefulWidget {
   const CapturaInformacoes({super.key});

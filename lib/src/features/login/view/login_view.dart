@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 //componentes
 import '../components/formulario_login.dart';
 import '../../components/custom_background.dart';
-import '../components/botao_privacidade.dart';
+import '../../components/botao_privacidade.dart';
 
 class Login extends StatelessWidget {
   const Login({super.key});

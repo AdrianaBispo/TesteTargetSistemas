@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 //utils
-import '../../../shared/utils/app_theme.dart';
+import '../../shared/utils/app_theme.dart';
 
 class BotaoPrivacidade extends StatelessWidget {
   const BotaoPrivacidade({super.key});

@@ -9,6 +9,7 @@ import '../../../shared/utils/app_theme.dart';
 //controller
 import '../controller/captura_controller.dart';
 //components
+import '../../../shared/models/informacoes.dart';
 import '../../components/botao_privacidade.dart';
 import '../../components/custom_background.dart';
 import '../components/lista_informacoes.dart';
@@ -53,10 +54,10 @@ class _CapturaInformacoesState extends State<CapturaInformacoes> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
-                      FutureBuilder<dynamic>(
-                          future: controller.repository.ler(key: 'texto'),
+                      FutureBuilder<List<Informacoes>>(
+                          future: controller.ler(),
                           builder: (BuildContext context,
-                              AsyncSnapshot<dynamic> snapshot) {
+                              AsyncSnapshot<List<Informacoes>> snapshot) {
                             switch (snapshot.connectionState) {
                               case ConnectionState.none:
                               case ConnectionState.waiting:

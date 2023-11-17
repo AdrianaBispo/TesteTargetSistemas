@@ -1,5 +1,4 @@
 import 'dart:developer';
-import 'dart:js_interop';
 import 'package:mobx/mobx.dart';
 
 part 'login_controller.g.dart';
@@ -45,7 +44,7 @@ abstract class _LoginController with Store {
   }
 
   void usuarioComprimento(String? value) {
-    if (value.isNull || value!.isEmpty) {
+    if (value == null || value.isEmpty) {
       error.usuario = 'O campo usuário deve ser preenchido';
     } else if (value.length < 2 && value.length > 20) {
       error.usuario = 'O usuário deve conter entre 2 e 20 caracteres';
@@ -65,7 +64,7 @@ abstract class _LoginController with Store {
   }
 
   void senhaComprimento(String? value) {
-    if (value.isNull || value!.isEmpty) {
+    if (value == null || value.isEmpty) {
       error.senha = 'O campo senha deve ser preenchido';
     } else if (value.length < 2 && value.length > 20) {
       error.senha = 'A senha deve conter entre 2 e 20 caracteres';

@@ -74,15 +74,3 @@ abstract class _FormErrorState with Store {
   @computed
   bool get temErros => texto != null;
 }
-
-
-/*
- O foco da digitação deve estar o tempo todo no campo de "Digite seu texto" e não pode
-ser perdido ao interagir com a tela.
-ok Ao acionar o "enter" o campo tem que verificar se a informação foi preenchida.
-ok O Card principal deve receber a informação digitada do campo.
-OK As informações precisam ser salvas e lidas uƟlizando a biblioteca shared_ preferences
-(hƩps://pub.dev/packages/shared_preferences)
-ok O Icone de excluir deve abrir um pop-up confirmando a ação.
-OK Obrigatório a uƟlização do plugin MOBX para a construção da tela.
-*/
